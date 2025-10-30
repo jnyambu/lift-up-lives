@@ -7,7 +7,6 @@ import {
   useMemo,
   useState,
 } from "react";
-import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Direction } from "@/hooks/useIntervals";
