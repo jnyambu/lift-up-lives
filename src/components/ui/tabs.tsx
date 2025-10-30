@@ -8,7 +8,6 @@ import {
   useState,
 } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
 import { Direction } from "@/hooks/useIntervals";
 import { useTabs, UseTabsOptions } from "@/hooks/useTabs";
 import { tw } from "@/utils/style";
