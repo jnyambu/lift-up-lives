@@ -7,6 +7,12 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
+// ✅ Import your new pages
+import FinancialLiteracy from "./pages/FinancialLiteracy";
+import AIBudgeting from "./pages/AIBudgeting";
+import CommunitySupport from "./pages/CommunitySupport";
+import ProgressTracking from "./pages/ProgressTracking";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,7 +24,14 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+
+          {/* ✅ Custom clickable box routes */}
+          <Route path="/financial-literacy" element={<FinancialLiteracy />} />
+          <Route path="/ai-budgeting" element={<AIBudgeting />} />
+          <Route path="/community-support" element={<CommunitySupport />} />
+          <Route path="/progress-tracking" element={<ProgressTracking />} />
+
+          {/* Catch-all */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
