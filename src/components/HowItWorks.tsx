@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { BookOpen, Target, TrendingUp, Users, X, DollarSign, PiggyBank, Calendar, Award, Check } from "lucide-react";
@@ -35,27 +36,44 @@ const HowItWorks = () => {
   const steps = [
     {
       id: "basics",
+=======
+import { Card } from "@/components/ui/card";
+import { BookOpen, Target, TrendingUp, Users } from "lucide-react";
+
+const HowItWorks = () => {
+  const steps = [
+    {
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
       icon: BookOpen,
       step: "Step 1",
       title: "Learn the Basics",
       description: "Start with simple financial literacy modules that teach budgeting, saving, and money management in plain language.",
     },
     {
+<<<<<<< HEAD
       id: "goals",
+=======
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
       icon: Target,
       step: "Step 2",
       title: "Set Your Goals",
       description: "Define your financial goals and let our AI create a personalized plan that fits your income and lifestyle.",
     },
     {
+<<<<<<< HEAD
       id: "progress",
+=======
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
       icon: TrendingUp,
       step: "Step 3",
       title: "Track Progress",
       description: "Monitor your spending, track savings, and watch your financial health improve with easy-to-understand visualizations.",
     },
     {
+<<<<<<< HEAD
       id: "community",
+=======
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
       icon: Users,
       step: "Step 4",
       title: "Join the Community",
@@ -63,6 +81,7 @@ const HowItWorks = () => {
     },
   ];
 
+<<<<<<< HEAD
   const lessons: Record<string, { title: string; content: string }> = {
     'budgeting': {
       title: 'Budgeting 101',
@@ -411,25 +430,47 @@ const HowItWorks = () => {
             Your Journey to Financial Freedom
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
+=======
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Your Journey to Financial Freedom
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
             Four simple steps to transform your financial future
           </p>
         </div>
 
+<<<<<<< HEAD
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
+=======
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
               <Card
                 key={index}
+<<<<<<< HEAD
                 onClick={() => setActiveModal(step.id)}
                 className="p-5 sm:p-6 relative overflow-hidden group hover:shadow-lg transition-all duration-300 bg-card border-border cursor-pointer hover:scale-[1.02] active:scale-95 hover:border-primary/50"
               >
                 {/* Step number background */}
                 <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-6xl sm:text-7xl md:text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors select-none">
+=======
+                className="p-6 relative overflow-hidden group hover:shadow-medium transition-all duration-300 bg-card border-border"
+              >
+                {/* Step number background */}
+                <div className="absolute top-4 right-4 text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors">
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
                   {index + 1}
                 </div>
 
                 <div className="relative z-10">
+<<<<<<< HEAD
                   <div className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg bg-gradient-primary flex items-center justify-center mb-3 sm:mb-4 shadow-soft group-hover:shadow-md transition-shadow">
                     <Icon className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-primary-foreground" />
                   </div>
@@ -441,11 +482,22 @@ const HowItWorks = () => {
 
                 {/* Hover indicator */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+=======
+                  <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-4 shadow-soft">
+                    <Icon className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  
+                  <div className="text-sm font-semibold text-secondary mb-2">{step.step}</div>
+                  <h3 className="text-xl font-bold mb-3 text-card-foreground">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                </div>
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
               </Card>
             );
           })}
         </div>
       </div>
+<<<<<<< HEAD
 
       {/* Modal */}
       <AnimatePresence>
@@ -482,8 +534,14 @@ const HowItWorks = () => {
           </motion.div>
         )}
       </AnimatePresence>
+=======
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
     </section>
   );
 };
 
+<<<<<<< HEAD
 export default HowItWorks;
+=======
+export default HowItWorks;
+>>>>>>> 293b28654335d25ad532decae9dd0c39303de088
